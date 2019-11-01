@@ -1,0 +1,59 @@
+.projectsDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+#infoPanelHeader{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .carouselSelectors{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: large;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.carouselItem{
+    text-align: center;
+}
+
+.projectCaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.projects{
+    height: 200px;
+    width: 220px;
+}
+
+.thing{
+    text-align: center;
+    width: 350px;
+}
+
+a{
+    color: rgb(245, 245, 245);
+}
+a:hover{
+    cursor: pointer;
+    color: lightskyblue;
+}
+
+#infoPanelHeader{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+

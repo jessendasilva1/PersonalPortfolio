@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import desktopImage from '../../images/background_portfolio3.jpg'
 import './main.css';
 
-import InfoBox from '../../components/infoBox/infoBox';
-import InfoPanel from '../../components/infoPanel/infoPanel';
+import GithubImage from '../../images/githubImage.png';
+import LinkedinImage from '../../images/LinkedinImage.png';
 import Header from '../../components/header/header';
 import Resume from '../../components/resume/resume';
-//import Contact from '../../components/contact/contact';
-//import AboutMe from '../../components/aboutme/aboutme';
+import Contact from '../../components/contact/contact';
+import AboutMe from '../../components/aboutme/aboutme';
 import Projects from '../../components/projects/projects';
 
 class Main extends Component {
@@ -29,6 +28,16 @@ class Main extends Component {
                     currentPanel: <Resume />
                 })
                 break;
+            case"aboutme":
+                this.setState({
+                    currentPanel: <AboutMe />
+                })
+                break;
+            case"contact":
+                this.setState({
+                    currentPanel: <Contact />
+                })
+                break;
             default:
                 break;
         }
@@ -36,17 +45,29 @@ class Main extends Component {
 
     render(){
         return(
-            <div className="mainDiv" style={{backgroundImage: `url(${desktopImage})` }}>
+            <div className="mainDiv">
                 <div className="mainHeader">
-                    <Header infoPanelItem={this.renderInfoBox}/>
+                <span id="socialSpan"> 
+                    <a href="https://www.linkedin.com/in/jessen-dasilva-84677715a/" target="blank">
+                        <img className="socialImage" id="linkedInImage"  src={LinkedinImage} alt="linkedInImage" />
+                    </a>
+                    <a href="https://github.com/jessendasilva1" target="blank">
+                        <img className="socialImage" id="githubImage" src={GithubImage} alt="githubImage" />
+                    </a>
+                </span>
+                    <Header  infoPanelItem={this.renderInfoBox}/>
                 </div>
-                
-                <div className="panels">
-                    <InfoBox />
-                    <InfoPanel>
+
+                <div className={(this.state.currentPanel === "") ? "default" : "nonDefault"}>
+                    <div className="infoBoxMain">
+                        <p>Hello, Im Jessen.</p>
+                        <p>An aspiring Full Stack Web Developer.</p>
+                    </div>
+                   <div className={(this.state.currentPanel === "") ? "infoPanelDiv" : "infoPanel"}>
                         {this.state.currentPanel}
-                    </InfoPanel>
+                    </div> 
                 </div>
+
             </div>
         );
     }
