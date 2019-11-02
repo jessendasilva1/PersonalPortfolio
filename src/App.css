@@ -1,7 +1,7 @@
 #main{
     
     background-image: url("./images/portfolio_background.jpg");
-    background-size: 100% 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -11,9 +11,9 @@
     #main{
         
         background-image: url("./images/portfolio_background_small.jpg");
-        background-size: 100% 100%;
         background-attachment: fixed;
         background-repeat: no-repeat;
+        min-height: 100vh;
     }
     
 }
