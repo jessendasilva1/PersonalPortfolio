@@ -1,20 +1,5 @@
-#main{
-    
-    background-image: url("./images/portfolio_background.jpg");
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
-/*
-@media screen and (max-width: 700px) {
-    #main{
-        
-        background-image: url("./images/portfolio_background_small.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        min-height: 100vh;
-    }
-    
+body{
+    font-family: 'Titillium Web', sans-serif;
 }
-*/

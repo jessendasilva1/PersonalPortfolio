@@ -10,38 +10,6 @@ import AboutMe from '../../components/aboutme/aboutme';
 import Projects from '../../components/projects/projects';
 
 class Main extends Component {
-    state = {
-        currentPanel: ''
-    };
-
-    renderInfoBox = event => {
-        let { id } = event.target;
-        console.log("Main: " + id);
-        switch(id){
-            case"projects":
-                this.setState({
-                    currentPanel: <Projects />
-                })
-                break;
-            case"resume":
-                this.setState({
-                    currentPanel: <Resume />
-                })
-                break;
-            case"aboutme":
-                this.setState({
-                    currentPanel: <AboutMe />
-                })
-                break;
-            case"contact":
-                this.setState({
-                    currentPanel: <Contact />
-                })
-                break;
-            default:
-                break;
-        }
-    }
 
     render(){
         return(
@@ -58,14 +26,11 @@ class Main extends Component {
                     <Header  infoPanelItem={this.renderInfoBox}/>
                 </div>
 
-                <div className={(this.state.currentPanel === "") ? "default" : "nonDefault"}>
+                <div className="default">
                     <div className="infoBoxMain">
                         <p>Hello, Im Jessen.</p>
                         <p>An aspiring Full Stack Web Developer.</p>
                     </div>
-                   <div className={(this.state.currentPanel === "") ? "infoPanelDiv" : "infoPanel"}>
-                        {this.state.currentPanel}
-                    </div> 
                 </div>
 
             </div>

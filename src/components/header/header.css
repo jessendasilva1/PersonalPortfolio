@@ -9,10 +9,14 @@
 
 .linkDivs{
     margin: 20px;
+    color: white;
+    text-decoration: none;
 }
 .linkDivs:hover{
     cursor: pointer;
-    color: grey;
+    transition: 0.5s color;
+    color: rgb(255, 111, 111);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {

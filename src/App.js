@@ -3,6 +3,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Main from './components/main/main';
+import Projects from './components/projects/projects';
+
 
 class App extends Component {
 	componentDidMount(){
@@ -12,6 +14,7 @@ class App extends Component {
 		return (
 			<div id="main">
 				<Main/>
+				<Projects />
 			</div> 
 		);
 	}

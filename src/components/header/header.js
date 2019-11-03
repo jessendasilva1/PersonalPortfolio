@@ -12,10 +12,10 @@ class Header extends Component {
     render(){
         return(
             <div className="headerDiv">
-                <p className="linkDivs" id="projects" onClick={this.props.infoPanelItem}>Projects</p> 
-                <p className="linkDivs" id="resume" onClick={this.props.infoPanelItem}>Resume</p> 
-                <p className="linkDivs" id="aboutme" onClick={this.props.infoPanelItem}>About Me</p> 
-                <p className="linkDivs" id="contact" onClick={this.props.infoPanelItem}>Contact</p>
+                <a className="linkDivs" id="projects" onClick={this.props.infoPanelItem} href="#projectsDivId">Projects</a> 
+                <a className="linkDivs" id="resume" onClick={this.props.infoPanelItem} href="#resumeDivId">Resume</a> 
+                <a className="linkDivs" id="aboutme" onClick={this.props.infoPanelItem} href="#aboutMeDiv">About Me</a> 
+                <a className="linkDivs" id="contact" onClick={this.props.infoPanelItem} href="#contact">Contact</a>
             </div>
         );
     }
