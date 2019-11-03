@@ -5,7 +5,7 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
     background-color: whitesmoke;
 }
 
@@ -95,53 +95,4 @@
     color: white;
     background-color: red;
 }
-/*
-@media screen and (max-width: 500px) {
-    .carouselSelectors{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgb(0, 0, 0);
-        font-size: large;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-}
-
-.carouselItem{
-    text-align: center;
-}
-
-.projectCaption{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
-    font-size: 16px;
-}
-
-.projects{
-    height: 200px;
-    width: 220px;
-}
-
-.thing{
-    text-align: center;
-    width: 350px;
-}
-
-a{
-    color: rgb(0, 0, 0);
-}
-a:hover{
-    cursor: pointer;
-    color: lightskyblue;
-}
-
-#infoPanelHeader{
-    color: rgb(44, 44, 44);
-    font-size: 40px;
-    text-decoration: underline;
-}
-*/
 

@@ -1,3 +1,83 @@
 .contactDiv{
-    color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #252934;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #252934;
+    /*padding-bottom: 100px;*/
+    padding-top: 50px;
+}
+
+.contactCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    flex-basis: 90%;
+}
+
+.contactInputs{
+    color: whitesmoke;
+    background-color: #1e242c;
+    border: none;
+    margin: 2px;
+    padding: 10px;
+}
+
+.contactHeaderDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    color: rgb(226, 226, 226);
+}
+
+#contactHeader{
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+ #submitButton{
+    text-transform: uppercase;
+    border: 2px solid white;
+    background-color: #1e242c;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+    width: 120px;
+ }
+
+ #submitButton:hover{
+    transition: .7s ease;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+ }
+
+ #backToTop{
+     display: flex;
+     justify-content: flex-end;
+     padding-top: 50px;
+     margin: 20px;
+ }
+
+ #topButton{
+     color: whitesmoke;
+     font-size: 16px;
+     background-color:  #1e242c;
+     border: 2px solid rgb(206, 65, 65);
+     padding: 5px 10px 5px 10px;
+}
+
+#topButton:hover{
+    transition: .7s ease;
+    background-color:  rgb(206, 65, 65);
+    color: black;
 }

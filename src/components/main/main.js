@@ -4,10 +4,6 @@ import './main.css';
 import GithubImage from '../../images/githubImage.png';
 import LinkedinImage from '../../images/LinkedinImage.png';
 import Header from '../../components/header/header';
-import Resume from '../../components/resume/resume';
-import Contact from '../../components/contact/contact';
-import AboutMe from '../../components/aboutme/aboutme';
-import Projects from '../../components/projects/projects';
 
 class Main extends Component {
 
