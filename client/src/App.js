@@ -16,6 +16,7 @@ class App extends Component {
 	render(){
 		return (
 			<div className="main" id="top">
+				<Meta />
 				<Main/>
 				<Projects />
 				<Resume />
