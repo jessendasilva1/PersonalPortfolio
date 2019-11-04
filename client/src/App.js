@@ -7,6 +7,7 @@ import Projects from './components/projects/projects';
 import Resume from './components/resume/resume';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
+import Meta from './components/meta/meta';
 
 class App extends Component {
 	componentDidMount(){
