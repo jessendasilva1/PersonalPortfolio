@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+
+import RemoveIcon from '@material-ui/icons/Remove';
+
 import './resume.css';
 
 class Resume extends Component {
     render(){
         return(
             <div className="resumeDiv" id="resumeDivId">
-                <h2>Resume</h2>  
+                <div className="resumeHeaderDiv">
+                    <h2 id="resumeHeader">Experience</h2>
+                    <RemoveIcon className="removeIcon" fontSize="large"/>
+                </div>  
                 <br/>
                 <div className="resumeInner">
                     <div className="resumeInnerDiv" id="resumeExperience">
@@ -14,7 +20,7 @@ class Resume extends Component {
                         <span>Junior Software Developer, 05/2018 - 10/2018 (5 months)</span>
                         <br/> 
                         <span>Timeless Materials, Waterloo, Ontario</span>
-                        <span>Material Manager, 04/2017 - 08/2019 (2 years, 4 month)</span>  
+                        <span>Material Manager, 04/2017 - 09/2019 (2 years, 5 month)</span>  
                     </div> 
                     <div className="resumeInnerDiv" id="resumeEducation">
                         <h2>Education</h2>
@@ -27,6 +33,11 @@ class Resume extends Component {
                         <span>Bachelor of Computing Degree</span>  
                         <span>Completed 2 years</span>
                     </div> 
+                </div>
+                <div className='viewResumeDiv'>
+                    <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1f-51Z0YlQIEFPMQ3lSvkKScwRhQvB5bmgDw8C-2p96M/edit?usp=sharing">
+                        <button className="viewResumeButton">View Resume</button>
+                    </a>
                 </div>
             </div>
         );
