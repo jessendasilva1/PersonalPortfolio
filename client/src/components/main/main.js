@@ -22,10 +22,10 @@ class Main extends Component {
                     <Header  infoPanelItem={this.renderInfoBox}/>
                 </div>
 
-                <div className="default">
+                <div className="default" id="typewriter">
                     <div className="infoBoxMain" >
-                        <p>Hello, Im Jessen.</p>
-                        <p>A Full Stack Web Developer.</p>
+                        <p className="typewriter">Hello, Im Jessen.</p>
+                        <p className="typewriter">A Full Stack Web Developer.</p>
                     </div>
                 </div>
 

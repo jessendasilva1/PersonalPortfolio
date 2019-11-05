@@ -86,7 +86,7 @@
     margin-top: 20px;
     flex-direction: column;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    
     justify-content: center;
     align-items: center;
     font-size: 50px;  
@@ -117,7 +117,6 @@ p{
         margin-bottom: 50px;
         flex-direction: column;
         color: rgb(255, 255, 255);
-        font-weight: bold;
         justify-content: center;
         align-items: center;
         padding-right: 5px;
@@ -137,21 +136,22 @@ p{
     margin: 10px;
 }
 
-/*
-#typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation 
-    white-space: nowrap; /* Keeps the content on a single line 
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens 
-    letter-spacing: .15em; /* Adjust as needed 
-    animation: 
-      typing 2.5s steps(100, end);
-  }
-  
-  /* The typing effect 
-  @keyframes typing {
-    from { width: 0% }
-    to { width: 100% }
-  }
-*/
+@media screen and (min-width: 1000px) {
+    .typewriter {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 2.5s steps(100, end);
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+}
+
   
 

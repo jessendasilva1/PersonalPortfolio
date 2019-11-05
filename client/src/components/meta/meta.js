@@ -6,7 +6,7 @@ import img4 from '../../images/portfolio_background.jpg';
 class Meta extends Component {
   render() {
     return (
-        <div class="wrapper">
+        <div className="wrapper">
           <MetaTags>
             <title>Portfolio</title>
             <meta id="meta-description" name="description" content="Some description." />
