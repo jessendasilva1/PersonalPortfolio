@@ -12,8 +12,16 @@ class Contact extends Component {
         email: '',
         message: '',
         submitButtonDisabled: true,
-
+        submitMessage: ''
     }
+
+    changeSubmitMessage = () => {
+        setTimeout(() => {
+            this.setState({
+                submitMessage: ''
+            })
+        }, 3000);
+    }  
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -33,14 +41,16 @@ class Contact extends Component {
             this.setState({
                 name: '',
                 email: '',
-                message: ''
-            })
+                message: '',
+                submitMessage: "Your Message Has Been Successfully Sent!"
+            });
+            this.changeSubmitMessage();
             //console.log("frontend" + response);
         })
         .catch(function(err){
             console.log("frontend err \n" + err);
         })
-    }
+    }  
 
     handleChange = (event) => {
         const value = event.target.value;
@@ -63,9 +73,14 @@ class Contact extends Component {
                         <input className="contactInputs" placeholder="name" name="name" onChange={this.handleChange} value={this.state.name} required></input>
                         <input className="contactInputs" placeholder="email" name="email" onChange={this.handleChange} value={this.state.email} required></input>
                         <textarea className="contactInputs" placeholder="message" name="message" onChange={this.handleChange} value={this.state.message} required></textarea> 
-                        <button id="submitButton" placeholder="submit">Submit</button>`
-                    </form>              
+                        <div id="testDiv">
+                            <button id="submitButton" placeholder="submit">Submit</button>
+                            <div id="submitMessage">{this.state.submitMessage}</div> 
+                        </div>
+                        
+                    </form>             
                 </div>
+                
                 <div id="backToTop">
                     <a href="#top"><button id="topButton" type="button">BACK TO TOP</button></a>
                 </div>

@@ -81,3 +81,14 @@
     background-color:  rgb(206, 65, 65);
     color: black;
 }
+
+#testDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#submitMessage{
+    padding-left: 10px;
+    color: green;
+}
