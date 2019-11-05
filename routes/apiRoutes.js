@@ -7,6 +7,7 @@ module.exports = function(app) {
 		console.log("Name: " + data.name + ". Email: " + data.email + ". Message: " + data.message + ".");
 		console.log("backend reached!");
 
+		// use environment variables to protect user and pass?
 		let transporter = nodeMailer.createTransport({
 			host: 'smtp.gmail.com',
 			port: 465,
