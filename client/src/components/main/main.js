@@ -23,9 +23,9 @@ class Main extends Component {
                 </div>
 
                 <div className="default">
-                    <div className="infoBoxMain">
-                        <p className="typewriter">Hello, Im Jessen.</p>
-                        <p className="typewriter">An aspiring Full Stack Web Developer.</p>
+                    <div className="infoBoxMain" >
+                        <p>Hello, Im Jessen.</p>
+                        <p>A Full Stack Web Developer.</p>
                     </div>
                 </div>
 
