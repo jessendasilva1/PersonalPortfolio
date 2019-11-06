@@ -18,6 +18,7 @@ module.exports = function(app) {
 			}
 		});
 		let mailOptions = {
+			// gmail overwrites the from: section because im using my login credentials. Try MailGun/ SendGrid etc.
 			from: data.name + " " + data.email,
 			to: 'jessendasilva1@gmail.com',
 			subject: "Inquiry from Portfolio",
