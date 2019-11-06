@@ -153,5 +153,26 @@ p{
       }
 }
 
+.viewResumeDiv{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.viewResumeButton{
+    text-transform: uppercase;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 7px;
+    width: 140px;
+}
+
+.viewResumeButton:hover{
+    transition: .7s ease;
+    color: white;
+    background-color: red;
+}
+
   
 

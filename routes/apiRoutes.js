@@ -18,7 +18,7 @@ module.exports = function(app) {
 			}
 		});
 		let mailOptions = {
-			replyTo: data.name + " " + data.email,
+			from: data.name + " " + data.email,
 			to: 'jessendasilva1@gmail.com',
 			subject: "Inquiry from Portfolio",
 			text: data.message
