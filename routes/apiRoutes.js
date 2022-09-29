@@ -10,7 +10,7 @@ module.exports = function(app) {
 		// use environment variables to protect user and pass?
 		let transporter = nodeMailer.createTransport({
 			host: 'smtp.gmail.com',
-			port: 587,
+			port: 465,
 			secure: true,
 			auth: {
 				user: 'jessendasilva1@gmail.com',
