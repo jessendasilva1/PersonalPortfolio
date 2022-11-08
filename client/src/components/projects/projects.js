@@ -75,7 +75,7 @@ class Projects extends Component {
                     </div>
                     <div className="projectCard">
                         <div className="container">
-                            <img className="projects" src={img4} alt="Fourth slide"/>
+                            <img className="projects" src={img4} alt="Fourth slide"/ >
                             <div className="projectCardOverlay">
                                 <h2>University Search</h2>
                                 <span>Search courses at various Universities and visualize prerequisites using D3.js</span>   
