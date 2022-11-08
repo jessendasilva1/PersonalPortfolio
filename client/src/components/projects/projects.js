@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import img1 from '../../images/bookSearchFull.jpg';
 import img2 from '../../images/memory_GoT.jpg';
 import img3 from '../../images/bueno-logo.png';
+import img4 from '../../images/university_search.png';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 import './projects.css';
@@ -67,6 +68,23 @@ class Projects extends Component {
                                     </a> 
                                 </div>
                                 <a rel="noopener noreferrer" target="_blank" href="https://github.com/jessendasilva1/Bueno">
+                                    <button className="deployButton">Github</button>
+                                </a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projectCard">
+                        <div className="container">
+                            <img className="projects" src={img4} alt="Fourth slide"/>
+                            <div className="projectCardOverlay">
+                                <h2>University Search</h2>
+                                <span>Search courses at various Universities and visualize prerequisites using D3.js</span>   
+                                <div className="onProjectButton">   
+                                    <a rel="noopener noreferrer" target="_blank" href="">
+                                        <button disabled className="deployButton">Deployed</button>
+                                    </a> 
+                                </div>
+                                <a rel="noopener noreferrer" target="_blank" href="https://github.com/jessendasilva1/UniveristySearch">
                                     <button className="deployButton">Github</button>
                                 </a>    
                             </div>
