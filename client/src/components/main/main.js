@@ -28,7 +28,7 @@ class Main extends Component {
                         <p className="typewriter">A Full Stack Web Developer.</p>
                     </div>
                     <div className='viewResumeDiv typewriter'>
-                        <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1YRCRb25Q5olGh01iLeJTMYyO1qhav5yx77DdBp08Q28/edit?usp=sharing">
+                        <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/1Dtfvt0xD8seZaQ-Sp7P5qPxGgJijD3Rbh4tHfcXVJyo/edit?usp=sharing">
                             <button className="viewResumeButton">View Resume</button>
                         </a>
                     </div>
